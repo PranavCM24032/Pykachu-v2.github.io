@@ -1,7 +1,7 @@
 // ==============================
 // GAME CONFIGURATION
 // ==============================
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7qK-u9e6pO_haPStxbkGsL1yomPhyG-AWgDL_Z0Oy2C64MPCljtvJOSOt4KeLIrSg/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyEKrFq9qEqzIajeF7TposZeLWwSArjPO64PbovYkzMxDkdqN2VHlsFE8azgnqCqAvb/exec';
 
 const CONFIG = {
     HINT_SETTINGS: {

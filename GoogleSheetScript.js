@@ -111,6 +111,17 @@ function handleRequest(e) {
     }
 }
 
+function resetSheet() {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheetNames = ["Registration", "Level_1", "Level_2", "Level_3", "General_Logs"];
+    sheetNames.forEach(function (name) {
+        var s = ss.getSheetByName(name);
+        if (s && s.getLastRow() > 1) {
+            s.deleteRows(2, s.getLastRow() - 1);
+        }
+    });
+}
+
 function setup() {
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     var sheets = [
