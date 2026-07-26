@@ -33,6 +33,9 @@ function handleRequest(e) {
             var serverTime = Utilities.formatDate(now, "GMT+5:30", "yyyy-MM-dd HH:mm:ss");
             var unixTs = Math.floor(now.getTime() / 1000);
 
+            var teamName = data.teamName || "";
+            if (!teamName || teamName === "Unknown") return ok("skipped");
+
             var missionStr = data.mission || "";
             var language = data.language || "N/A";
 
